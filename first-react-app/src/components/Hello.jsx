@@ -1,6 +1,9 @@
-const firstName = "Ryan";
 function Hello() {
-  return <h1>Good afternoon, {firstName + ", " + 10 * 20}</h1>;
+  return (
+    <div>
+      <h1>Hello, Bob</h1>
+    </div>
+  );
 }
 
 export default Hello;
