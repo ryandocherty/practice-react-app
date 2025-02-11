@@ -3,9 +3,9 @@ import Hello from "./components/Hello";
 function App() {
   return (
     <div className="App">
-      <Hello />
-      <Hello />
-      <Hello />
+      <Hello greeting="Hey" name="Jim" />
+      <Hello greeting="Hello" name="Bob" />
+      <Hello greeting="Hi" name="Tom" />
     </div>
   );
 }
