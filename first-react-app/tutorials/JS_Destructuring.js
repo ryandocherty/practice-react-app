@@ -120,8 +120,8 @@ console.log(firstName + ` ` + lastName);
   ]);
 
   let text = ``;
-  for (const [key, amount] of fruits) {
-    text += key + ` amount is: ` + amount + `\n`;
+  for (const [fruit, amount] of fruits) {
+    text += fruit + ` amount is: ` + amount + `\n`;
   }
   console.log(`\n` + text);
 })();
