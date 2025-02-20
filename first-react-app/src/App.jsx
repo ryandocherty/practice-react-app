@@ -11,8 +11,8 @@ function App() {
   }
 
   const Jim = new DefaultPerson("Jim", "Hey", "👋", [1, 3, 5, 7, 9]);
-  const Bob = new DefaultPerson("Bob", "Yo", "👍", [1, 3, 5, 7, 9]);
-  const Tom = new DefaultPerson("Jim", "Hi", "🤘", [1, 3, 5, 7, 9]);
+  const Bob = new DefaultPerson("Bob", "Yo", "👍", [1, 2, 3, 4, 5]);
+  const Tom = new DefaultPerson("Jim", "Hi", "🤘", [0, 2, 4, 6, 8]);
 
   return (
     <div className="App">
