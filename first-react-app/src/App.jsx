@@ -1,26 +1,18 @@
 import Hello from "./components/Hello";
 
 function App() {
-  const Jim = {
-    name: "Jim",
-    greeting: "Hey",
-    emoji: "👋",
-    queueNumbers: [1, 3, 5, 7, 9],
-  };
+  class DefaultPerson {
+    constructor(name, greeting, emoji, queueNumbers = []) {
+      this.name = name;
+      this.greeting = greeting;
+      this.emoji = emoji;
+      this.queueNumbers = queueNumbers;
+    }
+  }
 
-  const Bob = {
-    name: "Bob",
-    greeting: "Yo",
-    emoji: "👍",
-    queueNumbers: [1, 3, 5, 7, 9],
-  };
-
-  const Tom = {
-    name: "Tom",
-    greeting: "Hi",
-    emoji: "🤘",
-    queueNumbers: [1, 3, 5, 7, 9],
-  };
+  const Jim = new DefaultPerson("Jim", "Hey", "👋", [1, 3, 5, 7, 9]);
+  const Bob = new DefaultPerson("Bob", "Yo", "👍", [1, 3, 5, 7, 9]);
+  const Tom = new DefaultPerson("Jim", "Hi", "🤘", [1, 3, 5, 7, 9]);
 
   return (
     <div className="App">
