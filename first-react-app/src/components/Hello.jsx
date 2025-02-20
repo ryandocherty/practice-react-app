@@ -1,8 +1,9 @@
-function Hello({ greeting, name, emoji, queueNumbers }) {
+function Hello({ person }) {
   return (
     <div>
       <h1>
-        {greeting}, {name} {emoji} {queueNumbers}
+        {person.greeting}, {person.name}
+        {person.emoji} {person.queueNumbers}
       </h1>
     </div>
   );
