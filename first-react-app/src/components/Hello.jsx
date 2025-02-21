@@ -1,4 +1,4 @@
-function Hello({ person }) {
+export default function Hello({ person }) {
   return (
     <div>
       <h1>
@@ -8,5 +8,3 @@ function Hello({ person }) {
     </div>
   );
 }
-
-export default Hello;
