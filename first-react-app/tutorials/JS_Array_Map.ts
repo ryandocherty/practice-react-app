@@ -27,6 +27,7 @@ export {};
 //Example 2:
 (function () {
   const prices = [10, 20, 30, 40, 50, 60];
+  //Discount prices by 32%:
   const discountedPrices: number[] = prices.map((price) =>
     parseFloat((price * 0.68).toFixed(2))
   );
